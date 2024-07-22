@@ -1,0 +1,11 @@
+
+.event-card {
+    display: grid;
+    border: 1px solid green;
+    grid-template-columns: repeat(6,1fr);
+
+    & p {
+        align-content: center;
+        justify-content: center;
+    }
+}
