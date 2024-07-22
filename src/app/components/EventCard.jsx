@@ -7,6 +7,7 @@ import styles from './event-card.module.css';
 
 import {getDay, getDate, getMonth} from 'date-fns';
 
+
 export default function EventCard({name, city, venue, date: dateString, time}) {
 
     const date = getDate(new Date(dateString));
