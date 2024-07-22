@@ -1,9 +1,9 @@
-import SearchableEventList from "./components/EventList";
+import SearchableEventList from './components/SearchableEventList';
 
-export default async function Page({searchParams}) {
-
-  return <section>
-    <SearchableEventList query={searchParams?.query} />
-  </section>
-
+export default async function Page({ searchParams }) {
+  return (
+    <section>
+      <SearchableEventList query={searchParams?.query} />
+    </section>
+  );
 }
