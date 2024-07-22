@@ -11,12 +11,15 @@ export const formatEventData = (data) => {
   };
 };
 
-export default function EventList({ events }) {
+export default function EventList({ events, totalElements }) {
   return (
-    <ul>
+    <>
+     <h2>EVENTS - {totalElements} RESULTS</h2>
+        <ul>
       {events.map((event) => {
         return <EventCard key={event.id} {...formatEventData(event)} />;
       })}
     </ul>
+  </>
   );
 }

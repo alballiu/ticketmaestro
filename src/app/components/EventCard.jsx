@@ -7,6 +7,8 @@ import styles from './event-card.module.css';
 import { getDay, getDate, getMonth } from 'date-fns';
 
 export default function EventCard({ name, city, venue, date: dateString, time }) {
+  console.log(typeof time);
+
   const date = getDate(new Date(dateString));
   const dayIndex = getDay(new Date(dateString));
   const monthIndex = getMonth(new Date(dateString));
@@ -34,7 +36,7 @@ export default function EventCard({ name, city, venue, date: dateString, time })
       </section>
       <section>
         <p>
-          {daysInWeek[dayIndex]} - {time}
+          {daysInWeek[dayIndex]} - {time.slice(0,-3)}
         </p>
         <p>{name}</p>
         <p>{city}</p>

@@ -16,7 +16,7 @@ export default function SearchBar() {
     } else {
       params.delete('query');
     }
-    replace(`?${params.toString()}`);
+    replace(`${pathname}?${params.toString()}`);
   }
 
   return (

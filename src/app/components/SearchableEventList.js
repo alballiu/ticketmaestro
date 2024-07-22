@@ -1,4 +1,4 @@
-import SearchBar from './SearchBar';
+
 import EventList from './EventList';
 
 async function fetchEvents({ query }) {
@@ -13,9 +13,8 @@ export default async function SearchableEventList({ query }) {
 
   return (
     <section>
-      <SearchBar />
-      <h2>EVENTS - {data.page.totalElements} RESULTS</h2>
-      <EventList events={data._embedded.events} />
-    </section>
+      
+      <EventList events={data._embedded.events} totalElements={data.page.totalElements} />
+    </section> 
   );
 }
