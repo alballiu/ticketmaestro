@@ -1,7 +1,18 @@
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import List from "./components/List";
+
+function MyButton() {
+  return <button>Click Here</button>
+}
+
+
 export default function Page() {
   return (
     <section>
-      <h1>Welcome to the home ...</h1>
+      <Header />
+      <List />
+      <Footer />
     </section>
   );
 }
