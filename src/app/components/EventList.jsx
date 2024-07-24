@@ -3,29 +3,37 @@ import React from 'react';
 import EventCard from './EventCard.jsx';
 
 async function fetchEvents() {
-  const response = await fetch(`https://app.ticketmaster.com/discovery/v2/events.json?apikey=${process.env.TICKETMASTER_API_KEY}&keyword=jazz&city=manchester`)
-  const data = await response.json()
-
-  return data._embedded.events
+  return fetch(`https://app.ticketmaster.com/discovery/v2/events.json?apikey=${process.env.TICKETMASTER_API_KEY}&keyword=jazz&city=Manchester`) // Returns a promise, await async does this under the hood
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (jsonObject) {
+      // console.log(jsonObject._embedded.events,'<-- events'); 
+      // console.log(jsonObject._embedded.events.pop()._embedded.venues.pop(),'<-- venue'); 
+      return jsonObject._embedded.events
+    })
 }
 
 export default async function EventList() {
-  const events = await fetchEvents()
 
-  // console.log(events[0])
+  const events_ = await fetchEvents()
 
-  const eventData = events.map(event => ({
-    id: event.id,
-    name: event.name,
-    url: event.url,
-    location: event.sales
-  }))
-
+  let events = events_.map((item) => {
+    let venue = item._embedded.venues.pop();
+    return {
+      id: item.id,
+      name: item.name,
+      month: new Date(item.dates.start.localDate).toLocaleString('default', { month: 'short' }),
+      day: new Date(item.dates.start.localDate).getDate(),
+      time: item.dates.start.localTime,
+      location: venue && venue.city.name,
+      venue: venue && venue.name,
+      url: item.url
+    }
+  })
   return (
     <div className="event-list">
-      {eventData.map((event) => (
-        <EventCard key={event.id} {...event} />
-      ))}
+      {events.map(event => <EventCard key={event.id} {...event} />)}
     </div>
-  );
+  )
 }

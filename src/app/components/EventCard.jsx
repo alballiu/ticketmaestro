@@ -9,11 +9,10 @@ export default function EventCard(props) {
                 <li className="event-name">{props.name}</li>
                 <li className="event-location">{props.location}</li>
                 <li className="event-venue">{props.venue}</li>
-                {props.onPartnerSite && <li className="event-partner-site">On Partner Site</li>}
             </ul>
-            <a href={props.url} className="event-link">
+            <a href={props.url} className="event-link" target="_blank">
                 Find tickets
             </a>
         </div>
-    );
+    )
 }
