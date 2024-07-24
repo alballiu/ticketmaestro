@@ -1,12 +1,14 @@
-import EventCard from './components/EventCard.js'
-import List from './components/List.js';
+import EventList from './components/EventList.jsx'
+import Header from './components/Header.jsx'
+import Footer from './components/Footer.jsx'
 
 export default function Page() {
 
   return (
     <section>
-      <h1>Welcome to the home ...</h1>
-      <List />
+      <Header />
+      <EventList />
+      <Footer />
     </section>
   );
 }

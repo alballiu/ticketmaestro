@@ -10,9 +10,10 @@
 E.g. event name, city, etc...
 - Create a JS file in this directory and create a [JS object](https://javascript.info/object) with the properties you listed in the previous step
 
-
-
-
-
-
-
+ID
+Date
+Time
+Name
+City
+Venue
+On partner site?

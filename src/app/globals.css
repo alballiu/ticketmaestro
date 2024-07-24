@@ -73,7 +73,6 @@ header a {
         display: flex;
         gap: 20px;
     }
-
     .event-card .event-date {
         text-align: center;
         width: 70px;
