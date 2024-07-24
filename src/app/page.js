@@ -1,18 +1,12 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import List from "./components/List";
-
-function MyButton() {
-  return <button>Click Here</button>
-}
-
+import EventCard from './components/EventCard.js'
+import List from './components/List.js';
 
 export default function Page() {
+
   return (
     <section>
-      <Header />
+      <h1>Welcome to the home ...</h1>
       <List />
-      <Footer />
     </section>
   );
 }

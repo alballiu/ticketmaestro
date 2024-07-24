@@ -1,21 +1,6 @@
-
-
 .eventcard {
-    border: 1px solid blue;
-    display: flex;
-    gap: 10px;
-    /* grid-template-columns: repeat(6, 1fr); */
-    align-items: center;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(6,1fr)
 }
 
-.findtickets {
-    position: absolute;
-    right: 20px;
-}
-
-.nearyou {
-    display: inline-block;
-    border: solid;
-    margin: 10px 0px 0px 0px;
-    background-color: cornflowerblue
-}
