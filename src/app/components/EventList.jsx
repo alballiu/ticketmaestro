@@ -1,4 +1,4 @@
-import EventCard from './EventCard.jsx'
+import EventCard from './EventCard.jsx';
 
 async function fetchEvents() {
   return fetch(`https://app.ticketmaster.com/discovery/v2/events.json?apikey=${process.env.TICKETMASTER_API_KEY}&keyword=jazz&city=Manchester`) // Returns a promise, await async does this under the hood

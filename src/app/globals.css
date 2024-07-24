@@ -1,126 +1,126 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 ol,
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background-color: rgb(26, 69, 137);
-    color: #fff;
-    padding: 50px 30px 50px 30px;
+  background-color: rgb(26, 69, 137);
+  color: #fff;
+  padding: 50px 30px 50px 30px;
 }
 
 header a {
-    color: #fff;
+  color: #fff;
 }
 
 @media (min-width: 600px) {
-    .topbar {
-        display: flex;
-        gap: 20px;
-    }
+  .topbar {
+    display: flex;
+    gap: 20px;
+  }
 }
 
 .topbar .navigation {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .topbar .navigation ol {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .topbar .profile svg {
-    width: 15px;
-    fill: #fff;
+  width: 15px;
+  fill: #fff;
 }
 
 .search-container {
-    text-align: center;
-    margin-top: 40px;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .search {
-    background-color: #fff;
-    padding: 30px;
-    display: inline-block;
+  background-color: #fff;
+  padding: 30px;
+  display: inline-block;
 }
 
 .search-form {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .event-list {
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .event-card {
-    border: 1px solid #aaa;
-    padding: 20px;
+  border: 1px solid #aaa;
+  padding: 20px;
 }
 
 @media (min-width: 600px) {
-    .event-card {
-        display: flex;
-        gap: 20px;
-    }
-    .event-card .event-date {
-        text-align: center;
-        width: 70px;
-    }
+  .event-card {
+    display: flex;
+    gap: 20px;
+  }
+  .event-card .event-date {
+    text-align: center;
+    width: 70px;
+  }
 }
 
 .event-card .event-date span {
-    font-weight: bold;
-    font-size: 2rem;
-    display: block;
+  font-weight: bold;
+  font-size: 2rem;
+  display: block;
 }
 
 .event-card .event-details {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .event-card .event-details .event-name {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .event-card .event-details .event-partner-site {
-    font-style: italic;
-    color: #999;
+  font-style: italic;
+  color: #999;
 }
 
 footer {
-    background-color: rgb(51, 51, 51);
-    color: #fff;
-    padding: 50px 30px 50px 30px;
+  background-color: rgb(51, 51, 51);
+  color: #fff;
+  padding: 50px 30px 50px 30px;
 }
 
 @media (min-width: 600px) {
-    footer {
-        display: flex;
-    }
+  footer {
+    display: flex;
+  }
 
-    footer div {
-        flex-grow: 1;
-    }
+  footer div {
+    flex-grow: 1;
+  }
 }
 
 footer h4 {
-    margin: 0;
+  margin: 0;
 }
 
 footer a {
-    color: #fff;
+  color: #fff;
 }
