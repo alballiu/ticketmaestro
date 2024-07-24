@@ -1,8 +1,6 @@
 # Sub-goal: Render a static list of event data
 
-
-Preview me! `⇧⌘V` (Mac)  or `Ctrl+Shift+V` (Windows)
-
+Preview me! `⇧⌘V` (Mac) or `Ctrl+Shift+V` (Windows)
 
 ## Learning objectives ✅
 
@@ -24,22 +22,24 @@ We can render a list of event cards as below:
 using a static array of JS objects:
 
 ```js
-[  {
-    "id": "17GOvOG615my7_w",
-    "name": "Jazz Sabbath",
-    "venue": "Band On The Wall.",
-    "date": "2025-02-12",
-    "time": "20:00:00",
-    "location": "Manchester"
+[
+  {
+    id: '17GOvOG615my7_w',
+    name: 'Jazz Sabbath',
+    venue: 'Band On The Wall.',
+    date: '2025-02-12',
+    time: '20:00:00',
+    location: 'Manchester',
   },
   {
-    "id": "17GOvOG6153YNR7",
-    "name": "Jazz Sabbath",
-    "venue": "Kendal Brewery Arts Centre",
-    "date": "2025-02-13",
-    "time": "20:00:00",
-    "location": "Cumbria"
-  },]
+    id: '17GOvOG6153YNR7',
+    name: 'Jazz Sabbath',
+    venue: 'Kendal Brewery Arts Centre',
+    date: '2025-02-13',
+    time: '20:00:00',
+    location: 'Cumbria',
+  },
+];
 ```
 
 ## Setup

@@ -1,9 +1,9 @@
 let event = {
-    id: '',
-    date: '',
-    time: '',
-    name: '',
-    location: '',
-    venue: '',
-    isPartnerSite: '',
-}
+  id: '',
+  date: '',
+  time: '',
+  name: '',
+  location: '',
+  venue: '',
+  isPartnerSite: '',
+};

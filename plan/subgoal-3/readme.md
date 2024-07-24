@@ -1,6 +1,6 @@
 # Sub-goal: Fetch and list data from the ticketmaster API
 
-Preview me! `⇧⌘V` (Mac)  or `Ctrl+Shift+V` (Windows)
+Preview me! `⇧⌘V` (Mac) or `Ctrl+Shift+V` (Windows)
 
 ## Learning objectives ✅
 

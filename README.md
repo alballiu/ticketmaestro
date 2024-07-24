@@ -1,6 +1,6 @@
 # Ticketmaestro 🎫
 
-Preview me! `⇧⌘V` (Mac)  or `Ctrl+Shift+V` (Windows)
+Preview me! `⇧⌘V` (Mac) or `Ctrl+Shift+V` (Windows)
 
 ## Problem
 

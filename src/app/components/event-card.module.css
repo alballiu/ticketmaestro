@@ -1,6 +1,5 @@
 .eventcard {
-    border: 1px solid red;
-    display: grid;
-    grid-template-columns: repeat(6,1fr)
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
 }
-
